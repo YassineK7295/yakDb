@@ -1,0 +1,6 @@
+*.out
+info.plist
+tasks.json
+settings.json
+launch.json
+c_cpp_properties.json
