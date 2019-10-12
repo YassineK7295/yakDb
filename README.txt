@@ -32,9 +32,9 @@ DROP TABLE logs;
 .exist
 
 Tasks:
-1) Create interactive shell
-2) Add a few "meta" commands:
-    .exit
+1) Create interactive shell (DONE)
+2) Add a few "meta" commands: (IN PROGRESS)
+    .exit / quit
     .help
 3) Create tokenizer
     Space delimited
