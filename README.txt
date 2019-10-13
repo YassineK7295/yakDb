@@ -33,10 +33,11 @@ DROP TABLE logs;
 
 Tasks:
 1) Create interactive shell (DONE)
-2) Add a few "meta" commands: (IN PROGRESS)
-    .exit / quit
-    .help
-3) Create tokenizer
+2) Create tokenizer
+    Tokenize basic inputs (IN PROGRESS)
+    Add a few "meta" commands: 
+        .exit / quit
+        .help
     Space delimited
     Terminates command with ;
     Recognize:
@@ -45,10 +46,10 @@ Tasks:
             COLUMN1: [INT, BIGINT, VARCHAR(<size> < 256)]
         )
     Validate statement
-4) Parserit
+3) Parserit
     From token to method
         Recognize what needs to be done
-5) Executor
+4) Executor
     Gets necessary commands, decides how to execute them
         Handles execution issues
 5) Storage
