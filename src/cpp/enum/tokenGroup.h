@@ -1,5 +1,5 @@
 #ifndef TOKEN_GROUP_H
-#define TOKEN_GROUP_HTOKEN_TYPE_H
+#define TOKEN_GROUP_H
 
 enum TokenGroup {
     Meta,       // .exit, .quit, .tables
@@ -7,6 +7,8 @@ enum TokenGroup {
     Other       // table_name
 };
 
-//extern TokenType Type;
+static const TokenGroup AllGroups[] = {
+    Meta, Command, Other
+};
 
 #endif

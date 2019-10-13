@@ -1,12 +1,14 @@
 #include <iostream>
 #include <string>
+#include <vector>
+#include "./tokenizer/tokenizer.h"
 
 using namespace std;
 
 const string HORIZONTAL_BORDER = "##################################################";
-enum Meta { HELP, EXIT, QUIT };
 
 int main() {
+    Tokenizer tokenizer;
     bool quit = false;
     string str;
 
@@ -17,6 +19,13 @@ int main() {
     while(!quit) {
         cout << "> "; 
         cin >> str;
+        if(str.compare(".exit") || str.compare(".quit")) {
+            quit = true;
+            continue;
+        }
+        vector<Token> tokens = tokenizer.tokenize(str);
+        // parse
+        // execute
     }
 
     return 0;
